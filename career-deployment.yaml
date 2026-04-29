@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: connect-career-frontend
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: career-frontend
+  template:
+    metadata:
+      labels:
+        app: career-frontend
+    spec:
+      containers:
+      - name: web-server
+        image: connect-career-app:v3
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
