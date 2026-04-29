@@ -26,6 +26,7 @@ Before starting, ensure your system (Ubuntu/Linux recommended) has the following
 First, boot up the local Kubernetes cluster. Think of this as powering on the data center that will host our application.
 ```bash
 minikube start
+```
 
 ### Step 2: Write the Custom Application
 Create a dedicated workspace folder and write the custom application code.
